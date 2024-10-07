@@ -190,6 +190,51 @@
         android:layout_marginRight="25dp"
         android:background="@drawable/ic_tag"/>
 
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_profile_active"/>
+
+    <ImageView
+        android:id="@+id/reels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_reels"
+        android:layout_toLeftOf="@+id/profile"
+        android:layout_marginRight="65dp"/>
+
+    <ImageView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/reels"
+        android:background="@drawable/ic_upload"
+        android:layout_marginRight="65dp"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/upload"
+        android:background="@drawable/ic_search"
+        android:layout_marginRight="65dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_home"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/search"
+        android:layout_marginRight="65dp"/>
+
+
+
 
 
 
