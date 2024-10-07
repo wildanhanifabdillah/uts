@@ -31,7 +31,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:layout_marginTop="25dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_height="wrap_content"
@@ -42,10 +44,84 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/userstory"
+                    android:layout_width="60dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/user_story"
+                    android:layout_marginLeft="20dp" />
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/user_story"
+                    android:text="Cerita Anda"
+                    app:layout_constraintBottom_toBottomOf="@id/userstory"
+                    android:textSize="12dp"
+                <ImageView
+                    android:id="@+id/asset"
+                    android:layout_width="60dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/asset_story"
+                    app:layout_constraintLeft_toRightOf="@+id/userstory"
+                    android:layout_marginLeft="20dp"/>
 
+                <TextView
+                    android:id="@+id/assettext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assets"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/asset"
+                    tools:layout_editor_absoluteX="89dp" />
+
+                <ImageView
+                    android:id="@+id/liga"
+                    android:layout_width="60dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/liga_story"
+                    app:layout_constraintLeft_toRightOf="@+id/asset"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:text="Liga"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/liga"
+                    app:layout_constraintLeft_toRightOf="@id/assettext" />
+
+                <ImageView
+                    android:id="@+id/asset2"
+                    android:layout_width="60dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/asset_story"
+                    app:layout_constraintLeft_toRightOf="@+id/liga"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/assettext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assets"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/asset2"
+                    tools:layout_editor_absoluteX="250dp" />
+
+                <ImageView
+                    android:id="@+id/liga2"
+                    android:layout_width="60dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/liga_story"
+                    app:layout_constraintLeft_toRightOf="@+id/asset2"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:text="Liga"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="@id/liga"
+                    app:layout_constraintLeft_toRightOf="@id/assettext2" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
